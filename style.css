@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*border: 2px solid blue;*/
+}
+
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+	font-size: 1.9em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*NAV BAR STYLE*/
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+#navbar li {
+	list-style: none;
+	border-top: 1px solid #000;
+	width: 100%;
+	padding: 20px 20px;
+}
+
+#navbar {
+	border-right: solid #778899;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	overflow: auto;
+}
+
+/*MAIN DOCUMENT STYLE*/
+
+#main-doc {
+	position: absolute;
+	margin-left: 340px;
+	padding-right: 20px;
+	text-align: justify;
+	padding-bottom: 150px;
+}
+
+.main-section header {
+	text-align: left;
+}
+
+p {
+	padding-left: 20px;
+	margin-top: 20px;
+	font-size: 0.9em;
+	color: #828282;
+}
+
+.main-section li {
+	margin-left: 80px;
+	margin-top: 20px;
+	font-size: 0.9em;
+	color: #828282;
+}
+
+code {
+    display: block;
+    text-align: left;
+	position: relative;
+	word-break: normal; /*é usada para especificar se o navegador deve inserir ou não quebras de linha onde o texto vazaria de seu container.*/
+	word-wrap: normal; /*Indica que as linhas só podem quebrar em pontos de quebra normais de palavras.*/
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 15px;
+	margin: 10px;
+	margin-left: 40px;
+	border-radius: 5px;
+}
+
+#Data_Types ol li {
+	margin-left: 140px;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 650px){
+	#navbar {
+		width: 100%;
+		height: 250px;
+		border: 1px solid #000;
+		position: static;
+	}
+
+	header {
+		margin-bottom: 10px;
+	}
+
+	li {
+		padding: 10px 10px;
+	}
+
+	#main-doc {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		padding: 0 20px;
+	}
+
+	.main-section li {
+		margin-left: 50px;
+		padding: 0 20px;
+	}	
+
+	.main-section header {
+		padding: 0 20px;
+	}
+
+	code {
+		margin: 10px 20px;
+	}
+
+	#Data_Types ol li {
+		margin-left: 100px;
+	}
+
+	#References {
+		padding-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	#navbar {
+		width: 100%;
+		height: 250px;
+		border: 1px solid #000;
+		position: static;
+	}
+
+	header {
+		margin-bottom: 10px;
+	}
+
+	li {
+		padding: 10px 10px;
+	}
+
+	#main-doc {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		padding: 0 20px;
+	}
+
+	.main-section li {
+		margin-left: 50px;
+		padding: 0 20px;
+	}	
+
+	.main-section header {
+		padding: 0 20px;
+	}
+
+	#References {
+		padding-bottom: 50px;
+	}
+}
